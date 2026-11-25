@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-alabaster: #FAF9F6;
+  --color-stone-band: #F3F1ED;
+  --color-stone-frame: #EFECE6;
+  --color-lavender-wash: #EAE4F7;
+  --color-lavender-aura: #EDE9FA;
+  --color-lavender: #6E56CF;
+  --color-charcoal: #161618;
+  --color-graphite: #525156;
+  --color-muted: #8A8890;
+  --color-hairline: #E4E2DD;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FAF9F6;
+    color: #161618;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle architectural dot matrix pattern for hero & callout banner */
+.bg-editorial-dots {
+  background-image: radial-gradient(#C8BFEF 1.25px, transparent 1.25px);
+  background-size: 14px 14px;
+}
+
